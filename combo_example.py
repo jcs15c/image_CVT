@@ -4,9 +4,9 @@ from scipy import misc
 import matplotlib.pyplot as plt
 
 
-def main(imname):
+def main():
     #load Image
-    #imname = "moon"
+    imname = "bird"
     
     ########################### Combination CVT ###############################
     c_data, g_data = cvt2.read_image_combo("images/" + imname + ".png")
@@ -60,11 +60,7 @@ def main(imname):
 
     return 0
 
-names = ["car", "plants","bird","smalldog","starfish",\
-         "oranges", "whale","moon","fish", "cow"]
-         
-for name in names:
-    main(name)  
+main()  
 
 
 
